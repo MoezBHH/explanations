@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://chat.openai.com/chat -->
+<html class="light" style="color-scheme: light;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" class="jsx-5be976455d976918">
+    <meta name="next-head-count" content="3">
+
+
+    <meta name="description" content="">
+    <meta property="og:title" content="Law cases">
+
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <link rel="preload" href="./css/b4fb48a7d6642c33.css" as="style">
+    <link rel="stylesheet" href="./css/b4fb48a7d6642c33.css" data-n-g=""><noscript data-n-css=""></noscript>
+    <link rel="shortcut icon" type="image/jpg" href="./images/justice_scale.png" />
+    <title>Law cases</title>
+
+
+
+    <style>
+        .correct {
+            --tw-bg-opacity: 1;
+            background-color: #40bc2324
+        }
+
+        .faulty {
+            --tw-bg-opacity: 1;
+            background-color: #df797c78
+        }
+
+        .neutral {
+            --tw-bg-opacity: 1;
+            background-color: #c0b65c78
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="overflow-hidden w-full  relative">
+        <div class="flex h-full flex-1 flex-col md:pl-60">
+
+            <main class="relative h-full w-full transition-width flex flex-col overflow-hidden items-stretch flex-1">
+
+            </main>
+        </div>
+        <div class="hidden bg-gray-900 md:fixed md:inset-y-0 md:flex md:w-60 md:flex-col">
+            <div class="text-white flex py-3 px-3 items-center gap-3 rounded-md"> <a
+                    href="http://jec.unm.edu/education/online-training/" target="_blank"
+                    class="hover:bg-gray-500/10 transition-colors duration-200 text-white cursor-pointer text-sm">
+                    Cases extracted from the Judicial Education Center</a></div>
+
+            <div class="text-white flex py-3 px-3 items-center gap-3 rounded-md">
+                Text describing the case
+
+                <div class="w-[30px] flex flex-col relative items-end">
+                    <div>
+                        <img src="images/justice_scale.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-white flex py-3 px-3 items-center gap-3 rounded-md">
+                Groud trouth decision and explanations
+
+                <div class="w-[30px] flex flex-col relative items-end">
+                    <div>
+                        <img src="images/judge_hammer-.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-white flex py-3 px-3 items-center gap-3 rounded-md">
+                ChatGPT decision and explanations
+
+                <div class="w-[30px] flex flex-col relative items-end">
+                    <div class="relative h-[30px] w-[30px] p-1 rounded-sm text-white flex items-center justify-center"
+                        style="background-color: rgb(16, 163, 127);"><svg width="41" height="41" viewBox="0 0 41 41"
+                            fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" class="h-6 w-6">
+                            <path
+                                d="M37.5324 16.8707C37.9808 15.5241 38.1363 14.0974 37.9886 12.6859C37.8409 11.2744 37.3934 9.91076 36.676 8.68622C35.6126 6.83404 33.9882 5.3676 32.0373 4.4985C30.0864 3.62941 27.9098 3.40259 25.8215 3.85078C24.8796 2.7893 23.7219 1.94125 22.4257 1.36341C21.1295 0.785575 19.7249 0.491269 18.3058 0.500197C16.1708 0.495044 14.0893 1.16803 12.3614 2.42214C10.6335 3.67624 9.34853 5.44666 8.6917 7.47815C7.30085 7.76286 5.98686 8.3414 4.8377 9.17505C3.68854 10.0087 2.73073 11.0782 2.02839 12.312C0.956464 14.1591 0.498905 16.2988 0.721698 18.4228C0.944492 20.5467 1.83612 22.5449 3.268 24.1293C2.81966 25.4759 2.66413 26.9026 2.81182 28.3141C2.95951 29.7256 3.40701 31.0892 4.12437 32.3138C5.18791 34.1659 6.8123 35.6322 8.76321 36.5013C10.7141 37.3704 12.8907 37.5973 14.9789 37.1492C15.9208 38.2107 17.0786 39.0587 18.3747 39.6366C19.6709 40.2144 21.0755 40.5087 22.4946 40.4998C24.6307 40.5054 26.7133 39.8321 28.4418 38.5772C30.1704 37.3223 31.4556 35.5506 32.1119 33.5179C33.5027 33.2332 34.8167 32.6547 35.9659 31.821C37.115 30.9874 38.0728 29.9178 38.7752 28.684C39.8458 26.8371 40.3023 24.6979 40.0789 22.5748C39.8556 20.4517 38.9639 18.4544 37.5324 16.8707ZM22.4978 37.8849C20.7443 37.8874 19.0459 37.2733 17.6994 36.1501C17.7601 36.117 17.8666 36.0586 17.936 36.0161L25.9004 31.4156C26.1003 31.3019 26.2663 31.137 26.3813 30.9378C26.4964 30.7386 26.5563 30.5124 26.5549 30.2825V19.0542L29.9213 20.998C29.9389 21.0068 29.9541 21.0198 29.9656 21.0359C29.977 21.052 29.9842 21.0707 29.9867 21.0902V30.3889C29.9842 32.375 29.1946 34.2791 27.7909 35.6841C26.3872 37.0892 24.4838 37.8806 22.4978 37.8849ZM6.39227 31.0064C5.51397 29.4888 5.19742 27.7107 5.49804 25.9832C5.55718 26.0187 5.66048 26.0818 5.73461 26.1244L13.699 30.7248C13.8975 30.8408 14.1233 30.902 14.3532 30.902C14.583 30.902 14.8088 30.8408 15.0073 30.7248L24.731 25.1103V28.9979C24.7321 29.0177 24.7283 29.0376 24.7199 29.0556C24.7115 29.0736 24.6988 29.0893 24.6829 29.1012L16.6317 33.7497C14.9096 34.7416 12.8643 35.0097 10.9447 34.4954C9.02506 33.9811 7.38785 32.7263 6.39227 31.0064ZM4.29707 13.6194C5.17156 12.0998 6.55279 10.9364 8.19885 10.3327C8.19885 10.4013 8.19491 10.5228 8.19491 10.6071V19.808C8.19351 20.0378 8.25334 20.2638 8.36823 20.4629C8.48312 20.6619 8.64893 20.8267 8.84863 20.9404L18.5723 26.5542L15.206 28.4979C15.1894 28.5089 15.1703 28.5155 15.1505 28.5173C15.1307 28.5191 15.1107 28.516 15.0924 28.5082L7.04046 23.8557C5.32135 22.8601 4.06716 21.2235 3.55289 19.3046C3.03862 17.3858 3.30624 15.3413 4.29707 13.6194ZM31.955 20.0556L22.2312 14.4411L25.5976 12.4981C25.6142 12.4872 25.6333 12.4805 25.6531 12.4787C25.6729 12.4769 25.6928 12.4801 25.7111 12.4879L33.7631 17.1364C34.9967 17.849 36.0017 18.8982 36.6606 20.1613C37.3194 21.4244 37.6047 22.849 37.4832 24.2684C37.3617 25.6878 36.8382 27.0432 35.9743 28.1759C35.1103 29.3086 33.9415 30.1717 32.6047 30.6641C32.6047 30.5947 32.6047 30.4733 32.6047 30.3889V21.188C32.6066 20.9586 32.5474 20.7328 32.4332 20.5338C32.319 20.3348 32.154 20.1698 31.955 20.0556ZM35.3055 15.0128C35.2464 14.9765 35.1431 14.9142 35.069 14.8717L27.1045 10.2712C26.906 10.1554 26.6803 10.0943 26.4504 10.0943C26.2206 10.0943 25.9948 10.1554 25.7963 10.2712L16.0726 15.8858V11.9982C16.0715 11.9783 16.0753 11.9585 16.0837 11.9405C16.0921 11.9225 16.1048 11.9068 16.1207 11.8949L24.1719 7.25025C25.4053 6.53903 26.8158 6.19376 28.2383 6.25482C29.6608 6.31589 31.0364 6.78077 32.2044 7.59508C33.3723 8.40939 34.2842 9.53945 34.8334 10.8531C35.3826 12.1667 35.5464 13.6095 35.3055 15.0128ZM14.2424 21.9419L10.8752 19.9981C10.8576 19.9893 10.8423 19.9763 10.8309 19.9602C10.8195 19.9441 10.8122 19.9254 10.8098 19.9058V10.6071C10.8107 9.18295 11.2173 7.78848 11.9819 6.58696C12.7466 5.38544 13.8377 4.42659 15.1275 3.82264C16.4173 3.21869 17.8524 2.99464 19.2649 3.1767C20.6775 3.35876 22.0089 3.93941 23.1034 4.85067C23.0427 4.88379 22.937 4.94215 22.8668 4.98473L14.9024 9.58517C14.7025 9.69878 14.5366 9.86356 14.4215 10.0626C14.3065 10.2616 14.2466 10.4877 14.2479 10.7175L14.2424 21.9419ZM16.071 17.9991L20.4018 15.4978L24.7325 17.9975V22.9985L20.4018 25.4983L16.071 22.9985V17.9991Z"
+                                fill="currentColor"></path>
+                        </svg></div>
+                </div>
+            </div>
+
+            <div style="background:white " class="rounded-md">
+                <div class="prose flex py-3 px-3 items-center gap-3  correct"> Correct decision</div>
+            </div>
+            <div style="background:white " class="rounded-md">
+                <div class="prose flex py-3 px-3 items-center gap-3 rounded-md neutral"> No decision</div>
+            </div>
+            <div style="background:white " class="rounded-md">
+                <div class="prose flex py-3 px-3 items-center gap-3 rounded-md faulty"> Faulty decision</div>
+            </div>  
+
+
+
+        </div>
+    </div>
+
+
+    <!-- Case -->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group bg-gray-50 dark:bg-gray-800">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div>
+                    <img src="images/justice_scale.png" alt="">
+                </div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    The prosecutor in a criminal case charges John with battery for hitting Dan in the face with a
+                    swinging door. Dan, the victim, is called as the only witness and testifies that John pushed the
+                    door open very fast. But then he adds that he does not believe that John knew he was on the other
+                    side of the door.
+                    Should the judge find John guilty of criminal battery on Dan?
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Golden Truth-->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group dark:bg-gray-50">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div>
+                    <img src="images/judge_hammer-.png" alt="">
+                </div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    No, because John did not intend to hit Dan.
+                    John is not guilty of a criminal battery on Dan because intent to cause harm is one of the elements
+                    of the offense. In this case there is no evidence that John intended to hit Dan with the door.
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ChatGPT response. Set class to correct if the response is correct, otherwise faulty-->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group dark:bg-[#444654] ">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div class="relative h-[30px] w-[30px] p-1 rounded-sm text-white flex items-center justify-center"
+                    style="background-color: rgb(16, 163, 127);"><svg width="41" height="41" viewBox="0 0 41 41"
+                        fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" class="h-6 w-6">
+                        <path
+                            d="M37.5324 16.8707C37.9808 15.5241 38.1363 14.0974 37.9886 12.6859C37.8409 11.2744 37.3934 9.91076 36.676 8.68622C35.6126 6.83404 33.9882 5.3676 32.0373 4.4985C30.0864 3.62941 27.9098 3.40259 25.8215 3.85078C24.8796 2.7893 23.7219 1.94125 22.4257 1.36341C21.1295 0.785575 19.7249 0.491269 18.3058 0.500197C16.1708 0.495044 14.0893 1.16803 12.3614 2.42214C10.6335 3.67624 9.34853 5.44666 8.6917 7.47815C7.30085 7.76286 5.98686 8.3414 4.8377 9.17505C3.68854 10.0087 2.73073 11.0782 2.02839 12.312C0.956464 14.1591 0.498905 16.2988 0.721698 18.4228C0.944492 20.5467 1.83612 22.5449 3.268 24.1293C2.81966 25.4759 2.66413 26.9026 2.81182 28.3141C2.95951 29.7256 3.40701 31.0892 4.12437 32.3138C5.18791 34.1659 6.8123 35.6322 8.76321 36.5013C10.7141 37.3704 12.8907 37.5973 14.9789 37.1492C15.9208 38.2107 17.0786 39.0587 18.3747 39.6366C19.6709 40.2144 21.0755 40.5087 22.4946 40.4998C24.6307 40.5054 26.7133 39.8321 28.4418 38.5772C30.1704 37.3223 31.4556 35.5506 32.1119 33.5179C33.5027 33.2332 34.8167 32.6547 35.9659 31.821C37.115 30.9874 38.0728 29.9178 38.7752 28.684C39.8458 26.8371 40.3023 24.6979 40.0789 22.5748C39.8556 20.4517 38.9639 18.4544 37.5324 16.8707ZM22.4978 37.8849C20.7443 37.8874 19.0459 37.2733 17.6994 36.1501C17.7601 36.117 17.8666 36.0586 17.936 36.0161L25.9004 31.4156C26.1003 31.3019 26.2663 31.137 26.3813 30.9378C26.4964 30.7386 26.5563 30.5124 26.5549 30.2825V19.0542L29.9213 20.998C29.9389 21.0068 29.9541 21.0198 29.9656 21.0359C29.977 21.052 29.9842 21.0707 29.9867 21.0902V30.3889C29.9842 32.375 29.1946 34.2791 27.7909 35.6841C26.3872 37.0892 24.4838 37.8806 22.4978 37.8849ZM6.39227 31.0064C5.51397 29.4888 5.19742 27.7107 5.49804 25.9832C5.55718 26.0187 5.66048 26.0818 5.73461 26.1244L13.699 30.7248C13.8975 30.8408 14.1233 30.902 14.3532 30.902C14.583 30.902 14.8088 30.8408 15.0073 30.7248L24.731 25.1103V28.9979C24.7321 29.0177 24.7283 29.0376 24.7199 29.0556C24.7115 29.0736 24.6988 29.0893 24.6829 29.1012L16.6317 33.7497C14.9096 34.7416 12.8643 35.0097 10.9447 34.4954C9.02506 33.9811 7.38785 32.7263 6.39227 31.0064ZM4.29707 13.6194C5.17156 12.0998 6.55279 10.9364 8.19885 10.3327C8.19885 10.4013 8.19491 10.5228 8.19491 10.6071V19.808C8.19351 20.0378 8.25334 20.2638 8.36823 20.4629C8.48312 20.6619 8.64893 20.8267 8.84863 20.9404L18.5723 26.5542L15.206 28.4979C15.1894 28.5089 15.1703 28.5155 15.1505 28.5173C15.1307 28.5191 15.1107 28.516 15.0924 28.5082L7.04046 23.8557C5.32135 22.8601 4.06716 21.2235 3.55289 19.3046C3.03862 17.3858 3.30624 15.3413 4.29707 13.6194ZM31.955 20.0556L22.2312 14.4411L25.5976 12.4981C25.6142 12.4872 25.6333 12.4805 25.6531 12.4787C25.6729 12.4769 25.6928 12.4801 25.7111 12.4879L33.7631 17.1364C34.9967 17.849 36.0017 18.8982 36.6606 20.1613C37.3194 21.4244 37.6047 22.849 37.4832 24.2684C37.3617 25.6878 36.8382 27.0432 35.9743 28.1759C35.1103 29.3086 33.9415 30.1717 32.6047 30.6641C32.6047 30.5947 32.6047 30.4733 32.6047 30.3889V21.188C32.6066 20.9586 32.5474 20.7328 32.4332 20.5338C32.319 20.3348 32.154 20.1698 31.955 20.0556ZM35.3055 15.0128C35.2464 14.9765 35.1431 14.9142 35.069 14.8717L27.1045 10.2712C26.906 10.1554 26.6803 10.0943 26.4504 10.0943C26.2206 10.0943 25.9948 10.1554 25.7963 10.2712L16.0726 15.8858V11.9982C16.0715 11.9783 16.0753 11.9585 16.0837 11.9405C16.0921 11.9225 16.1048 11.9068 16.1207 11.8949L24.1719 7.25025C25.4053 6.53903 26.8158 6.19376 28.2383 6.25482C29.6608 6.31589 31.0364 6.78077 32.2044 7.59508C33.3723 8.40939 34.2842 9.53945 34.8334 10.8531C35.3826 12.1667 35.5464 13.6095 35.3055 15.0128ZM14.2424 21.9419L10.8752 19.9981C10.8576 19.9893 10.8423 19.9763 10.8309 19.9602C10.8195 19.9441 10.8122 19.9254 10.8098 19.9058V10.6071C10.8107 9.18295 11.2173 7.78848 11.9819 6.58696C12.7466 5.38544 13.8377 4.42659 15.1275 3.82264C16.4173 3.21869 17.8524 2.99464 19.2649 3.1767C20.6775 3.35876 22.0089 3.93941 23.1034 4.85067C23.0427 4.88379 22.937 4.94215 22.8668 4.98473L14.9024 9.58517C14.7025 9.69878 14.5366 9.86356 14.4215 10.0626C14.3065 10.2616 14.2466 10.4877 14.2479 10.7175L14.2424 21.9419ZM16.071 17.9991L20.4018 15.4978L24.7325 17.9975V22.9985L20.4018 25.4983L16.071 22.9985V17.9991Z"
+                            fill="currentColor"></path>
+                    </svg></div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    <div class="request-:R3d6:-5 markdown prose break-words dark:prose-invert light correct">
+                        <p>In order for John to be found guilty of criminal battery, the prosecutor must be able to
+                            prove that John intentionally or recklessly caused bodily harm to Dan. Based on the
+                            information provided, it does not seem that the prosecutor has enough evidence to prove that
+                            John intended to hit Dan with the door. Additionally, the fact that Dan does not believe
+                            that John knew he was on the other side of the door suggests that John did not act
+                            recklessly. Therefore, it is unlikely that the judge would find John guilty of criminal
+                            battery on Dan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Case -->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group bg-gray-50 dark:bg-gray-800">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div>
+                    <img src="images/justice_scale.png" alt="">
+                </div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    Jeff makes a contract with Acme Farms to buy 1000 apples for $200, which is the average price for
+                    apples at that time. The contract specifies that Jeff must have the apples by April 2 so that he can
+                    make his specialty apple pies to sell to Yummy Bakery. On March 15, Acme Farms informs Jeff that
+                    they will not be able to meet his order. On April 4, Jeff files suit against Acme Farms for breach
+                    of contract and wins the case. Jeff asks for consequential damages that will reimburse him for the
+                    amount of profit that he would have been paid by Yummy Bakery if he had been able to make his apple
+                    pies. Acme presents evidence proving that Jeff had not even tried to find substitute apples, even
+                    though he had sufficient time before his deadline and there were other farms nearby that could have
+                    supplied him with apples for the same $200 price.<br>
+                    How should the judge rule?
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ground Truth-->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group dark:bg-gray-50">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div>
+                    <img src="images/judge_hammer-.png" alt="">
+                </div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    Jeff can recover damages, but such recovery should be reduced by the amount that he could have
+                    avoided if he had tried to buy his apples elsewhere.<br>
+                    Jeff had a duty to mitigate his damages by looking for a new apple
+                    supplier. His failure to use reasonable diligence to mitigate his damages means that the amount of
+                    damages he recovers should be reduced by the amount that might have been avoided by mitigation. The
+                    duty to mitigate only reduces recovery; it does not prohibit recovery. Note however, that even
+                    though recovery is not prohibited, in this case Jeff could have avoided all loss by going to another
+                    apple supplier. Since Jeff could have avoided the loss entirely, his recovery will be reduced to
+                    zero.
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ChatGPT response. Set class to correct if the response is correct, otherwise faulty-->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group dark:bg-[#444654] ">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div class="relative h-[30px] w-[30px] p-1 rounded-sm text-white flex items-center justify-center"
+                    style="background-color: rgb(16, 163, 127);"><svg width="41" height="41" viewBox="0 0 41 41"
+                        fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" class="h-6 w-6">
+                        <path
+                            d="M37.5324 16.8707C37.9808 15.5241 38.1363 14.0974 37.9886 12.6859C37.8409 11.2744 37.3934 9.91076 36.676 8.68622C35.6126 6.83404 33.9882 5.3676 32.0373 4.4985C30.0864 3.62941 27.9098 3.40259 25.8215 3.85078C24.8796 2.7893 23.7219 1.94125 22.4257 1.36341C21.1295 0.785575 19.7249 0.491269 18.3058 0.500197C16.1708 0.495044 14.0893 1.16803 12.3614 2.42214C10.6335 3.67624 9.34853 5.44666 8.6917 7.47815C7.30085 7.76286 5.98686 8.3414 4.8377 9.17505C3.68854 10.0087 2.73073 11.0782 2.02839 12.312C0.956464 14.1591 0.498905 16.2988 0.721698 18.4228C0.944492 20.5467 1.83612 22.5449 3.268 24.1293C2.81966 25.4759 2.66413 26.9026 2.81182 28.3141C2.95951 29.7256 3.40701 31.0892 4.12437 32.3138C5.18791 34.1659 6.8123 35.6322 8.76321 36.5013C10.7141 37.3704 12.8907 37.5973 14.9789 37.1492C15.9208 38.2107 17.0786 39.0587 18.3747 39.6366C19.6709 40.2144 21.0755 40.5087 22.4946 40.4998C24.6307 40.5054 26.7133 39.8321 28.4418 38.5772C30.1704 37.3223 31.4556 35.5506 32.1119 33.5179C33.5027 33.2332 34.8167 32.6547 35.9659 31.821C37.115 30.9874 38.0728 29.9178 38.7752 28.684C39.8458 26.8371 40.3023 24.6979 40.0789 22.5748C39.8556 20.4517 38.9639 18.4544 37.5324 16.8707ZM22.4978 37.8849C20.7443 37.8874 19.0459 37.2733 17.6994 36.1501C17.7601 36.117 17.8666 36.0586 17.936 36.0161L25.9004 31.4156C26.1003 31.3019 26.2663 31.137 26.3813 30.9378C26.4964 30.7386 26.5563 30.5124 26.5549 30.2825V19.0542L29.9213 20.998C29.9389 21.0068 29.9541 21.0198 29.9656 21.0359C29.977 21.052 29.9842 21.0707 29.9867 21.0902V30.3889C29.9842 32.375 29.1946 34.2791 27.7909 35.6841C26.3872 37.0892 24.4838 37.8806 22.4978 37.8849ZM6.39227 31.0064C5.51397 29.4888 5.19742 27.7107 5.49804 25.9832C5.55718 26.0187 5.66048 26.0818 5.73461 26.1244L13.699 30.7248C13.8975 30.8408 14.1233 30.902 14.3532 30.902C14.583 30.902 14.8088 30.8408 15.0073 30.7248L24.731 25.1103V28.9979C24.7321 29.0177 24.7283 29.0376 24.7199 29.0556C24.7115 29.0736 24.6988 29.0893 24.6829 29.1012L16.6317 33.7497C14.9096 34.7416 12.8643 35.0097 10.9447 34.4954C9.02506 33.9811 7.38785 32.7263 6.39227 31.0064ZM4.29707 13.6194C5.17156 12.0998 6.55279 10.9364 8.19885 10.3327C8.19885 10.4013 8.19491 10.5228 8.19491 10.6071V19.808C8.19351 20.0378 8.25334 20.2638 8.36823 20.4629C8.48312 20.6619 8.64893 20.8267 8.84863 20.9404L18.5723 26.5542L15.206 28.4979C15.1894 28.5089 15.1703 28.5155 15.1505 28.5173C15.1307 28.5191 15.1107 28.516 15.0924 28.5082L7.04046 23.8557C5.32135 22.8601 4.06716 21.2235 3.55289 19.3046C3.03862 17.3858 3.30624 15.3413 4.29707 13.6194ZM31.955 20.0556L22.2312 14.4411L25.5976 12.4981C25.6142 12.4872 25.6333 12.4805 25.6531 12.4787C25.6729 12.4769 25.6928 12.4801 25.7111 12.4879L33.7631 17.1364C34.9967 17.849 36.0017 18.8982 36.6606 20.1613C37.3194 21.4244 37.6047 22.849 37.4832 24.2684C37.3617 25.6878 36.8382 27.0432 35.9743 28.1759C35.1103 29.3086 33.9415 30.1717 32.6047 30.6641C32.6047 30.5947 32.6047 30.4733 32.6047 30.3889V21.188C32.6066 20.9586 32.5474 20.7328 32.4332 20.5338C32.319 20.3348 32.154 20.1698 31.955 20.0556ZM35.3055 15.0128C35.2464 14.9765 35.1431 14.9142 35.069 14.8717L27.1045 10.2712C26.906 10.1554 26.6803 10.0943 26.4504 10.0943C26.2206 10.0943 25.9948 10.1554 25.7963 10.2712L16.0726 15.8858V11.9982C16.0715 11.9783 16.0753 11.9585 16.0837 11.9405C16.0921 11.9225 16.1048 11.9068 16.1207 11.8949L24.1719 7.25025C25.4053 6.53903 26.8158 6.19376 28.2383 6.25482C29.6608 6.31589 31.0364 6.78077 32.2044 7.59508C33.3723 8.40939 34.2842 9.53945 34.8334 10.8531C35.3826 12.1667 35.5464 13.6095 35.3055 15.0128ZM14.2424 21.9419L10.8752 19.9981C10.8576 19.9893 10.8423 19.9763 10.8309 19.9602C10.8195 19.9441 10.8122 19.9254 10.8098 19.9058V10.6071C10.8107 9.18295 11.2173 7.78848 11.9819 6.58696C12.7466 5.38544 13.8377 4.42659 15.1275 3.82264C16.4173 3.21869 17.8524 2.99464 19.2649 3.1767C20.6775 3.35876 22.0089 3.93941 23.1034 4.85067C23.0427 4.88379 22.937 4.94215 22.8668 4.98473L14.9024 9.58517C14.7025 9.69878 14.5366 9.86356 14.4215 10.0626C14.3065 10.2616 14.2466 10.4877 14.2479 10.7175L14.2424 21.9419ZM16.071 17.9991L20.4018 15.4978L24.7325 17.9975V22.9985L20.4018 25.4983L16.071 22.9985V17.9991Z"
+                            fill="currentColor"></path>
+                    </svg></div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    <div class="request-:R3d6:-5 markdown prose break-words dark:prose-invert light neutral">
+                        <p>It is not possible for me to accurately determine how a judge should rule in this case
+                            without further information. In general, in order to recover damages for breach of contract,
+                            a party must prove that they suffered actual damages as a result of the breach. In this
+                            case, it is not clear whether Jeff can prove that he suffered actual damages as a result of
+                            Acme Farms' breach of contract.
+                            <br>
+                            If the judge finds that Jeff did not take reasonable steps to mitigate his damages by
+                            attempting to find substitute apples, the judge may conclude that Jeff has not suffered any
+                            actual damages and may not award any damages to Jeff. On the other hand, if the judge finds
+                            that Jeff did take reasonable steps to mitigate his damages and was unable to find
+                            substitute apples, the judge may conclude that Jeff has suffered actual damages and may
+                            award damages to Jeff.
+                            <br>
+                            It is ultimately up to the judge to determine whether Jeff is entitled to recover damages
+                            based on the evidence presented in the case.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Case -->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group bg-gray-50 dark:bg-gray-800">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div>
+                    <img src="images/justice_scale.png" alt="">
+                </div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    Pablo is walking down a crowded street and accidentally bumps into Ben. Pablo mumbles an apology and
+                    starts to walk by, but Ben yells at him, "Get back here so I can punch you for shoving me." Ben
+                    never touches Pablo, however.<br> Can Pablo recover damages from Ben for assault?
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ground Truth-->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group dark:bg-gray-50">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div>
+                    <img src="images/judge_hammer-.png" alt="">
+                </div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    Yes, because Ben threatened Pablo with an immediate assault.<br>
+                    Although perhaps Pablo should have been more careful in walking, Ben had no right to threaten him
+                    with a blow. Pablo can recover some damages for his fear of being hit.
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ChatGPT response. Set class to correct if the response is correct, otherwise faulty-->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group dark:bg-[#444654] ">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div class="relative h-[30px] w-[30px] p-1 rounded-sm text-white flex items-center justify-center"
+                    style="background-color: rgb(16, 163, 127);"><svg width="41" height="41" viewBox="0 0 41 41"
+                        fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" class="h-6 w-6">
+                        <path
+                            d="M37.5324 16.8707C37.9808 15.5241 38.1363 14.0974 37.9886 12.6859C37.8409 11.2744 37.3934 9.91076 36.676 8.68622C35.6126 6.83404 33.9882 5.3676 32.0373 4.4985C30.0864 3.62941 27.9098 3.40259 25.8215 3.85078C24.8796 2.7893 23.7219 1.94125 22.4257 1.36341C21.1295 0.785575 19.7249 0.491269 18.3058 0.500197C16.1708 0.495044 14.0893 1.16803 12.3614 2.42214C10.6335 3.67624 9.34853 5.44666 8.6917 7.47815C7.30085 7.76286 5.98686 8.3414 4.8377 9.17505C3.68854 10.0087 2.73073 11.0782 2.02839 12.312C0.956464 14.1591 0.498905 16.2988 0.721698 18.4228C0.944492 20.5467 1.83612 22.5449 3.268 24.1293C2.81966 25.4759 2.66413 26.9026 2.81182 28.3141C2.95951 29.7256 3.40701 31.0892 4.12437 32.3138C5.18791 34.1659 6.8123 35.6322 8.76321 36.5013C10.7141 37.3704 12.8907 37.5973 14.9789 37.1492C15.9208 38.2107 17.0786 39.0587 18.3747 39.6366C19.6709 40.2144 21.0755 40.5087 22.4946 40.4998C24.6307 40.5054 26.7133 39.8321 28.4418 38.5772C30.1704 37.3223 31.4556 35.5506 32.1119 33.5179C33.5027 33.2332 34.8167 32.6547 35.9659 31.821C37.115 30.9874 38.0728 29.9178 38.7752 28.684C39.8458 26.8371 40.3023 24.6979 40.0789 22.5748C39.8556 20.4517 38.9639 18.4544 37.5324 16.8707ZM22.4978 37.8849C20.7443 37.8874 19.0459 37.2733 17.6994 36.1501C17.7601 36.117 17.8666 36.0586 17.936 36.0161L25.9004 31.4156C26.1003 31.3019 26.2663 31.137 26.3813 30.9378C26.4964 30.7386 26.5563 30.5124 26.5549 30.2825V19.0542L29.9213 20.998C29.9389 21.0068 29.9541 21.0198 29.9656 21.0359C29.977 21.052 29.9842 21.0707 29.9867 21.0902V30.3889C29.9842 32.375 29.1946 34.2791 27.7909 35.6841C26.3872 37.0892 24.4838 37.8806 22.4978 37.8849ZM6.39227 31.0064C5.51397 29.4888 5.19742 27.7107 5.49804 25.9832C5.55718 26.0187 5.66048 26.0818 5.73461 26.1244L13.699 30.7248C13.8975 30.8408 14.1233 30.902 14.3532 30.902C14.583 30.902 14.8088 30.8408 15.0073 30.7248L24.731 25.1103V28.9979C24.7321 29.0177 24.7283 29.0376 24.7199 29.0556C24.7115 29.0736 24.6988 29.0893 24.6829 29.1012L16.6317 33.7497C14.9096 34.7416 12.8643 35.0097 10.9447 34.4954C9.02506 33.9811 7.38785 32.7263 6.39227 31.0064ZM4.29707 13.6194C5.17156 12.0998 6.55279 10.9364 8.19885 10.3327C8.19885 10.4013 8.19491 10.5228 8.19491 10.6071V19.808C8.19351 20.0378 8.25334 20.2638 8.36823 20.4629C8.48312 20.6619 8.64893 20.8267 8.84863 20.9404L18.5723 26.5542L15.206 28.4979C15.1894 28.5089 15.1703 28.5155 15.1505 28.5173C15.1307 28.5191 15.1107 28.516 15.0924 28.5082L7.04046 23.8557C5.32135 22.8601 4.06716 21.2235 3.55289 19.3046C3.03862 17.3858 3.30624 15.3413 4.29707 13.6194ZM31.955 20.0556L22.2312 14.4411L25.5976 12.4981C25.6142 12.4872 25.6333 12.4805 25.6531 12.4787C25.6729 12.4769 25.6928 12.4801 25.7111 12.4879L33.7631 17.1364C34.9967 17.849 36.0017 18.8982 36.6606 20.1613C37.3194 21.4244 37.6047 22.849 37.4832 24.2684C37.3617 25.6878 36.8382 27.0432 35.9743 28.1759C35.1103 29.3086 33.9415 30.1717 32.6047 30.6641C32.6047 30.5947 32.6047 30.4733 32.6047 30.3889V21.188C32.6066 20.9586 32.5474 20.7328 32.4332 20.5338C32.319 20.3348 32.154 20.1698 31.955 20.0556ZM35.3055 15.0128C35.2464 14.9765 35.1431 14.9142 35.069 14.8717L27.1045 10.2712C26.906 10.1554 26.6803 10.0943 26.4504 10.0943C26.2206 10.0943 25.9948 10.1554 25.7963 10.2712L16.0726 15.8858V11.9982C16.0715 11.9783 16.0753 11.9585 16.0837 11.9405C16.0921 11.9225 16.1048 11.9068 16.1207 11.8949L24.1719 7.25025C25.4053 6.53903 26.8158 6.19376 28.2383 6.25482C29.6608 6.31589 31.0364 6.78077 32.2044 7.59508C33.3723 8.40939 34.2842 9.53945 34.8334 10.8531C35.3826 12.1667 35.5464 13.6095 35.3055 15.0128ZM14.2424 21.9419L10.8752 19.9981C10.8576 19.9893 10.8423 19.9763 10.8309 19.9602C10.8195 19.9441 10.8122 19.9254 10.8098 19.9058V10.6071C10.8107 9.18295 11.2173 7.78848 11.9819 6.58696C12.7466 5.38544 13.8377 4.42659 15.1275 3.82264C16.4173 3.21869 17.8524 2.99464 19.2649 3.1767C20.6775 3.35876 22.0089 3.93941 23.1034 4.85067C23.0427 4.88379 22.937 4.94215 22.8668 4.98473L14.9024 9.58517C14.7025 9.69878 14.5366 9.86356 14.4215 10.0626C14.3065 10.2616 14.2466 10.4877 14.2479 10.7175L14.2424 21.9419ZM16.071 17.9991L20.4018 15.4978L24.7325 17.9975V22.9985L20.4018 25.4983L16.071 22.9985V17.9991Z"
+                            fill="currentColor"></path>
+                    </svg></div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    <div class="request-:R3d6:-5 markdown prose break-words dark:prose-invert light correct">
+                        <p>In order for Pablo to recover damages from Ben for assault, Pablo must be able to prove that
+                            Ben intended to cause him harm or that Ben's actions put Pablo in reasonable fear of
+                            imminent bodily harm. Based on the information provided, it does not seem that Ben intended
+                            to cause Pablo harm or that Pablo was in fear of imminent bodily harm.
+                            <br>Therefore, it is
+                            unlikely that Pablo would be able to recover damages from Ben for assault.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Case -->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group bg-gray-50 dark:bg-gray-800">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div>
+                    <img src="images/justice_scale.png" alt="">
+                </div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    Jennie slaps her daughter’s teacher, Anne, after the teacher accused Jennie’s daughter of cheating
+                    on a test. Distracted and humiliated, Anne drives home five hours later, runs a stop sign and gets
+                    into an accident that causes $3000 in damage to the other driver’s car, which Anne is required to
+                    pay. Anne sues Jennie for the tort of battery, and asks the court to award her the $3000 damages she
+                    had to pay the other vehicle owner for the accident.<br>
+
+                    What should the court do?
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ground Truth-->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group dark:bg-gray-50">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div>
+                    <img src="images/judge_hammer-.png" alt="">
+                </div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    Refuse to award Anne the $3000 in damages because these damages are too remote in time and
+                    causation.<br>
+                    While each case should be determined on its own merits, in this case the lapse of time and the slim
+                    connection between Jennie’s slap and Anne’s accident would prevent recovery of the damages from the
+                    accident. The fact that Anne was the driver of the vehicle involved in the accident would not by
+                    itself prevent recovery, however.
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ChatGPT response. Set class to correct if the response is correct, otherwise faulty-->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group dark:bg-[#444654] ">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div class="relative h-[30px] w-[30px] p-1 rounded-sm text-white flex items-center justify-center"
+                    style="background-color: rgb(16, 163, 127);"><svg width="41" height="41" viewBox="0 0 41 41"
+                        fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" class="h-6 w-6">
+                        <path
+                            d="M37.5324 16.8707C37.9808 15.5241 38.1363 14.0974 37.9886 12.6859C37.8409 11.2744 37.3934 9.91076 36.676 8.68622C35.6126 6.83404 33.9882 5.3676 32.0373 4.4985C30.0864 3.62941 27.9098 3.40259 25.8215 3.85078C24.8796 2.7893 23.7219 1.94125 22.4257 1.36341C21.1295 0.785575 19.7249 0.491269 18.3058 0.500197C16.1708 0.495044 14.0893 1.16803 12.3614 2.42214C10.6335 3.67624 9.34853 5.44666 8.6917 7.47815C7.30085 7.76286 5.98686 8.3414 4.8377 9.17505C3.68854 10.0087 2.73073 11.0782 2.02839 12.312C0.956464 14.1591 0.498905 16.2988 0.721698 18.4228C0.944492 20.5467 1.83612 22.5449 3.268 24.1293C2.81966 25.4759 2.66413 26.9026 2.81182 28.3141C2.95951 29.7256 3.40701 31.0892 4.12437 32.3138C5.18791 34.1659 6.8123 35.6322 8.76321 36.5013C10.7141 37.3704 12.8907 37.5973 14.9789 37.1492C15.9208 38.2107 17.0786 39.0587 18.3747 39.6366C19.6709 40.2144 21.0755 40.5087 22.4946 40.4998C24.6307 40.5054 26.7133 39.8321 28.4418 38.5772C30.1704 37.3223 31.4556 35.5506 32.1119 33.5179C33.5027 33.2332 34.8167 32.6547 35.9659 31.821C37.115 30.9874 38.0728 29.9178 38.7752 28.684C39.8458 26.8371 40.3023 24.6979 40.0789 22.5748C39.8556 20.4517 38.9639 18.4544 37.5324 16.8707ZM22.4978 37.8849C20.7443 37.8874 19.0459 37.2733 17.6994 36.1501C17.7601 36.117 17.8666 36.0586 17.936 36.0161L25.9004 31.4156C26.1003 31.3019 26.2663 31.137 26.3813 30.9378C26.4964 30.7386 26.5563 30.5124 26.5549 30.2825V19.0542L29.9213 20.998C29.9389 21.0068 29.9541 21.0198 29.9656 21.0359C29.977 21.052 29.9842 21.0707 29.9867 21.0902V30.3889C29.9842 32.375 29.1946 34.2791 27.7909 35.6841C26.3872 37.0892 24.4838 37.8806 22.4978 37.8849ZM6.39227 31.0064C5.51397 29.4888 5.19742 27.7107 5.49804 25.9832C5.55718 26.0187 5.66048 26.0818 5.73461 26.1244L13.699 30.7248C13.8975 30.8408 14.1233 30.902 14.3532 30.902C14.583 30.902 14.8088 30.8408 15.0073 30.7248L24.731 25.1103V28.9979C24.7321 29.0177 24.7283 29.0376 24.7199 29.0556C24.7115 29.0736 24.6988 29.0893 24.6829 29.1012L16.6317 33.7497C14.9096 34.7416 12.8643 35.0097 10.9447 34.4954C9.02506 33.9811 7.38785 32.7263 6.39227 31.0064ZM4.29707 13.6194C5.17156 12.0998 6.55279 10.9364 8.19885 10.3327C8.19885 10.4013 8.19491 10.5228 8.19491 10.6071V19.808C8.19351 20.0378 8.25334 20.2638 8.36823 20.4629C8.48312 20.6619 8.64893 20.8267 8.84863 20.9404L18.5723 26.5542L15.206 28.4979C15.1894 28.5089 15.1703 28.5155 15.1505 28.5173C15.1307 28.5191 15.1107 28.516 15.0924 28.5082L7.04046 23.8557C5.32135 22.8601 4.06716 21.2235 3.55289 19.3046C3.03862 17.3858 3.30624 15.3413 4.29707 13.6194ZM31.955 20.0556L22.2312 14.4411L25.5976 12.4981C25.6142 12.4872 25.6333 12.4805 25.6531 12.4787C25.6729 12.4769 25.6928 12.4801 25.7111 12.4879L33.7631 17.1364C34.9967 17.849 36.0017 18.8982 36.6606 20.1613C37.3194 21.4244 37.6047 22.849 37.4832 24.2684C37.3617 25.6878 36.8382 27.0432 35.9743 28.1759C35.1103 29.3086 33.9415 30.1717 32.6047 30.6641C32.6047 30.5947 32.6047 30.4733 32.6047 30.3889V21.188C32.6066 20.9586 32.5474 20.7328 32.4332 20.5338C32.319 20.3348 32.154 20.1698 31.955 20.0556ZM35.3055 15.0128C35.2464 14.9765 35.1431 14.9142 35.069 14.8717L27.1045 10.2712C26.906 10.1554 26.6803 10.0943 26.4504 10.0943C26.2206 10.0943 25.9948 10.1554 25.7963 10.2712L16.0726 15.8858V11.9982C16.0715 11.9783 16.0753 11.9585 16.0837 11.9405C16.0921 11.9225 16.1048 11.9068 16.1207 11.8949L24.1719 7.25025C25.4053 6.53903 26.8158 6.19376 28.2383 6.25482C29.6608 6.31589 31.0364 6.78077 32.2044 7.59508C33.3723 8.40939 34.2842 9.53945 34.8334 10.8531C35.3826 12.1667 35.5464 13.6095 35.3055 15.0128ZM14.2424 21.9419L10.8752 19.9981C10.8576 19.9893 10.8423 19.9763 10.8309 19.9602C10.8195 19.9441 10.8122 19.9254 10.8098 19.9058V10.6071C10.8107 9.18295 11.2173 7.78848 11.9819 6.58696C12.7466 5.38544 13.8377 4.42659 15.1275 3.82264C16.4173 3.21869 17.8524 2.99464 19.2649 3.1767C20.6775 3.35876 22.0089 3.93941 23.1034 4.85067C23.0427 4.88379 22.937 4.94215 22.8668 4.98473L14.9024 9.58517C14.7025 9.69878 14.5366 9.86356 14.4215 10.0626C14.3065 10.2616 14.2466 10.4877 14.2479 10.7175L14.2424 21.9419ZM16.071 17.9991L20.4018 15.4978L24.7325 17.9975V22.9985L20.4018 25.4983L16.071 22.9985V17.9991Z"
+                            fill="currentColor"></path>
+                    </svg></div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    <div class="request-:R3d6:-5 markdown prose break-words dark:prose-invert light correct">
+                        <p>The court should not award Anne the $3000 in damages she had to pay the other vehicle owner
+                            for the accident. The damages that Anne is seeking are not directly related to the battery
+                            committed by Jennie. Instead, they are the result of Anne's own actions in getting into a
+                            car accident. In order to recover damages for the tort of battery, Anne would need to prove
+                            that Jennie intentionally or recklessly caused her bodily harm. However, even if Anne could
+                            prove this, the damages she could recover would be limited to those that are directly
+                            related to the battery, such as medical expenses or lost wages.<br> Therefore, the court
+                            should
+                            not award Anne the $3000 in damages she seeks. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Case -->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group bg-gray-50 dark:bg-gray-800">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div>
+                    <img src="images/justice_scale.png" alt="">
+                </div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    Dorella purchases a brand new sewing machine from Sew-Sew, Inc. The sewing machine is one from a
+                    line of equipment Sew-Sew, Inc. manufactures itself for sale, utilizing components made and sold by
+                    third-party subcontractors. The written warranty specifically states that upon defect, malfunction
+                    or failure of the equipment, Sew-Sew, Inc. will replace the entire defective, malfunctioning or
+                    failing specific piece of equipment with a brand new component. Within the duration of the warranty,
+                    the motor of the sewing machine breaks in the middle of Dorella’s efforts to complete her kitchen
+                    curtains. Dorella returns the machine to Sew-Sew, Inc. Rather than replace the motor with a new one,
+                    it instead installs a used, remanufactured motor as a means of cost-saving given that every motor on
+                    that particular line of equipment has failed and needed replacement. Dorella brings suit against
+                    Sew-Sew, Inc. based on its failure to install a new motor, as provided for in the written warranty.
+                    <br>
+                    How should the judge rule?
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ground Truth-->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group dark:bg-gray-50">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div>
+                    <img src="images/judge_hammer-.png" alt="">
+                </div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    For Dorella since Sew-Sew Inc.’s written warranty specifically provides for the replacement of
+                    defective components with brand new ones.<br>
+                    Under the Magnuson-Moss Warranty Act, the written warranty must include a statement explaining what
+                    the seller will do in the event of a defect, malfunction or failure. Here, Sew-Sew Inc.’s warranty
+                    specifically states that defective, malfunctioning or failing equipment will be replaced with brand
+                    new components. This was not done here. Given its specific written warranty, Sew-Sew, Inc. cannot
+                    attempt to save money as a result of the apparently defective motors by modifying the terms of the
+                    written warranty regarding the use of brand new components. Rather, Sew-Sew Inc.’s efforts to regain
+                    or minimize any losses resulting from the apparently defective motors must be focused exclusively on
+                    the third-party manufacturer of that component.
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ChatGPT response. Set class to correct if the response is correct, otherwise faulty-->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group dark:bg-[#444654] ">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div class="relative h-[30px] w-[30px] p-1 rounded-sm text-white flex items-center justify-center"
+                    style="background-color: rgb(16, 163, 127);"><svg width="41" height="41" viewBox="0 0 41 41"
+                        fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" class="h-6 w-6">
+                        <path
+                            d="M37.5324 16.8707C37.9808 15.5241 38.1363 14.0974 37.9886 12.6859C37.8409 11.2744 37.3934 9.91076 36.676 8.68622C35.6126 6.83404 33.9882 5.3676 32.0373 4.4985C30.0864 3.62941 27.9098 3.40259 25.8215 3.85078C24.8796 2.7893 23.7219 1.94125 22.4257 1.36341C21.1295 0.785575 19.7249 0.491269 18.3058 0.500197C16.1708 0.495044 14.0893 1.16803 12.3614 2.42214C10.6335 3.67624 9.34853 5.44666 8.6917 7.47815C7.30085 7.76286 5.98686 8.3414 4.8377 9.17505C3.68854 10.0087 2.73073 11.0782 2.02839 12.312C0.956464 14.1591 0.498905 16.2988 0.721698 18.4228C0.944492 20.5467 1.83612 22.5449 3.268 24.1293C2.81966 25.4759 2.66413 26.9026 2.81182 28.3141C2.95951 29.7256 3.40701 31.0892 4.12437 32.3138C5.18791 34.1659 6.8123 35.6322 8.76321 36.5013C10.7141 37.3704 12.8907 37.5973 14.9789 37.1492C15.9208 38.2107 17.0786 39.0587 18.3747 39.6366C19.6709 40.2144 21.0755 40.5087 22.4946 40.4998C24.6307 40.5054 26.7133 39.8321 28.4418 38.5772C30.1704 37.3223 31.4556 35.5506 32.1119 33.5179C33.5027 33.2332 34.8167 32.6547 35.9659 31.821C37.115 30.9874 38.0728 29.9178 38.7752 28.684C39.8458 26.8371 40.3023 24.6979 40.0789 22.5748C39.8556 20.4517 38.9639 18.4544 37.5324 16.8707ZM22.4978 37.8849C20.7443 37.8874 19.0459 37.2733 17.6994 36.1501C17.7601 36.117 17.8666 36.0586 17.936 36.0161L25.9004 31.4156C26.1003 31.3019 26.2663 31.137 26.3813 30.9378C26.4964 30.7386 26.5563 30.5124 26.5549 30.2825V19.0542L29.9213 20.998C29.9389 21.0068 29.9541 21.0198 29.9656 21.0359C29.977 21.052 29.9842 21.0707 29.9867 21.0902V30.3889C29.9842 32.375 29.1946 34.2791 27.7909 35.6841C26.3872 37.0892 24.4838 37.8806 22.4978 37.8849ZM6.39227 31.0064C5.51397 29.4888 5.19742 27.7107 5.49804 25.9832C5.55718 26.0187 5.66048 26.0818 5.73461 26.1244L13.699 30.7248C13.8975 30.8408 14.1233 30.902 14.3532 30.902C14.583 30.902 14.8088 30.8408 15.0073 30.7248L24.731 25.1103V28.9979C24.7321 29.0177 24.7283 29.0376 24.7199 29.0556C24.7115 29.0736 24.6988 29.0893 24.6829 29.1012L16.6317 33.7497C14.9096 34.7416 12.8643 35.0097 10.9447 34.4954C9.02506 33.9811 7.38785 32.7263 6.39227 31.0064ZM4.29707 13.6194C5.17156 12.0998 6.55279 10.9364 8.19885 10.3327C8.19885 10.4013 8.19491 10.5228 8.19491 10.6071V19.808C8.19351 20.0378 8.25334 20.2638 8.36823 20.4629C8.48312 20.6619 8.64893 20.8267 8.84863 20.9404L18.5723 26.5542L15.206 28.4979C15.1894 28.5089 15.1703 28.5155 15.1505 28.5173C15.1307 28.5191 15.1107 28.516 15.0924 28.5082L7.04046 23.8557C5.32135 22.8601 4.06716 21.2235 3.55289 19.3046C3.03862 17.3858 3.30624 15.3413 4.29707 13.6194ZM31.955 20.0556L22.2312 14.4411L25.5976 12.4981C25.6142 12.4872 25.6333 12.4805 25.6531 12.4787C25.6729 12.4769 25.6928 12.4801 25.7111 12.4879L33.7631 17.1364C34.9967 17.849 36.0017 18.8982 36.6606 20.1613C37.3194 21.4244 37.6047 22.849 37.4832 24.2684C37.3617 25.6878 36.8382 27.0432 35.9743 28.1759C35.1103 29.3086 33.9415 30.1717 32.6047 30.6641C32.6047 30.5947 32.6047 30.4733 32.6047 30.3889V21.188C32.6066 20.9586 32.5474 20.7328 32.4332 20.5338C32.319 20.3348 32.154 20.1698 31.955 20.0556ZM35.3055 15.0128C35.2464 14.9765 35.1431 14.9142 35.069 14.8717L27.1045 10.2712C26.906 10.1554 26.6803 10.0943 26.4504 10.0943C26.2206 10.0943 25.9948 10.1554 25.7963 10.2712L16.0726 15.8858V11.9982C16.0715 11.9783 16.0753 11.9585 16.0837 11.9405C16.0921 11.9225 16.1048 11.9068 16.1207 11.8949L24.1719 7.25025C25.4053 6.53903 26.8158 6.19376 28.2383 6.25482C29.6608 6.31589 31.0364 6.78077 32.2044 7.59508C33.3723 8.40939 34.2842 9.53945 34.8334 10.8531C35.3826 12.1667 35.5464 13.6095 35.3055 15.0128ZM14.2424 21.9419L10.8752 19.9981C10.8576 19.9893 10.8423 19.9763 10.8309 19.9602C10.8195 19.9441 10.8122 19.9254 10.8098 19.9058V10.6071C10.8107 9.18295 11.2173 7.78848 11.9819 6.58696C12.7466 5.38544 13.8377 4.42659 15.1275 3.82264C16.4173 3.21869 17.8524 2.99464 19.2649 3.1767C20.6775 3.35876 22.0089 3.93941 23.1034 4.85067C23.0427 4.88379 22.937 4.94215 22.8668 4.98473L14.9024 9.58517C14.7025 9.69878 14.5366 9.86356 14.4215 10.0626C14.3065 10.2616 14.2466 10.4877 14.2479 10.7175L14.2424 21.9419ZM16.071 17.9991L20.4018 15.4978L24.7325 17.9975V22.9985L20.4018 25.4983L16.071 22.9985V17.9991Z"
+                            fill="currentColor"></path>
+                    </svg></div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    <div class="request-:R3d6:-5 markdown prose break-words dark:prose-invert light correct">
+                        <p>The judge should rule in favor of Dorella and find that Sew-Sew, Inc. violated the terms of
+                            the written warranty by not replacing the motor with a new one as promised. The
+                            Magnuson-Moss Warranty Act requires that warranties be honored and that consumers be
+                            provided with the written warranty that was promised.<br> In this case, the written warranty
+                            specifically stated that Sew-Sew, Inc. would replace the defective motor with a new one, and
+                            the fact that the company instead installed a used, remanufactured motor constitutes a
+                            breach of the warranty. Dorella has the right to seek legal recourse in this situation, and
+                            the judge should rule in her favor. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Case -->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group bg-gray-50 dark:bg-gray-800">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div>
+                    <img src="images/justice_scale.png" alt="">
+                </div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    Brunhilda and Frank had a valid contract under which Frank would buy all of the fruit from
+                    Brunhilda’s orchard. A fire swept through Brunhilda’s orchard just before the harvest, destroying
+                    all of the fruit trees. Brunhilda tells Frank that she will not be able to supply him with the
+                    fruit. Frank sues Brunhilda for breach of contract.<br>
+
+                    How should the judge rule?
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ground Truth-->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group dark:bg-gray-50">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div>
+                    <img src="images/judge_hammer-.png" alt="">
+                </div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    For Brunhilda, because it has become impossible for her to perform the contract.<br>
+                    A is correct. Unless the contract specifically states otherwise, when unforeseeable events cause
+                    contract performance to become impossible, the parties may be excused from performance of the
+                    contract. If the contract has a provision that addresses impossibility to perform, the court should
+                    apply that provision. </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ChatGPT response. Set class to correct if the response is correct, otherwise faulty-->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group dark:bg-[#444654] ">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div class="relative h-[30px] w-[30px] p-1 rounded-sm text-white flex items-center justify-center"
+                    style="background-color: rgb(16, 163, 127);"><svg width="41" height="41" viewBox="0 0 41 41"
+                        fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" class="h-6 w-6">
+                        <path
+                            d="M37.5324 16.8707C37.9808 15.5241 38.1363 14.0974 37.9886 12.6859C37.8409 11.2744 37.3934 9.91076 36.676 8.68622C35.6126 6.83404 33.9882 5.3676 32.0373 4.4985C30.0864 3.62941 27.9098 3.40259 25.8215 3.85078C24.8796 2.7893 23.7219 1.94125 22.4257 1.36341C21.1295 0.785575 19.7249 0.491269 18.3058 0.500197C16.1708 0.495044 14.0893 1.16803 12.3614 2.42214C10.6335 3.67624 9.34853 5.44666 8.6917 7.47815C7.30085 7.76286 5.98686 8.3414 4.8377 9.17505C3.68854 10.0087 2.73073 11.0782 2.02839 12.312C0.956464 14.1591 0.498905 16.2988 0.721698 18.4228C0.944492 20.5467 1.83612 22.5449 3.268 24.1293C2.81966 25.4759 2.66413 26.9026 2.81182 28.3141C2.95951 29.7256 3.40701 31.0892 4.12437 32.3138C5.18791 34.1659 6.8123 35.6322 8.76321 36.5013C10.7141 37.3704 12.8907 37.5973 14.9789 37.1492C15.9208 38.2107 17.0786 39.0587 18.3747 39.6366C19.6709 40.2144 21.0755 40.5087 22.4946 40.4998C24.6307 40.5054 26.7133 39.8321 28.4418 38.5772C30.1704 37.3223 31.4556 35.5506 32.1119 33.5179C33.5027 33.2332 34.8167 32.6547 35.9659 31.821C37.115 30.9874 38.0728 29.9178 38.7752 28.684C39.8458 26.8371 40.3023 24.6979 40.0789 22.5748C39.8556 20.4517 38.9639 18.4544 37.5324 16.8707ZM22.4978 37.8849C20.7443 37.8874 19.0459 37.2733 17.6994 36.1501C17.7601 36.117 17.8666 36.0586 17.936 36.0161L25.9004 31.4156C26.1003 31.3019 26.2663 31.137 26.3813 30.9378C26.4964 30.7386 26.5563 30.5124 26.5549 30.2825V19.0542L29.9213 20.998C29.9389 21.0068 29.9541 21.0198 29.9656 21.0359C29.977 21.052 29.9842 21.0707 29.9867 21.0902V30.3889C29.9842 32.375 29.1946 34.2791 27.7909 35.6841C26.3872 37.0892 24.4838 37.8806 22.4978 37.8849ZM6.39227 31.0064C5.51397 29.4888 5.19742 27.7107 5.49804 25.9832C5.55718 26.0187 5.66048 26.0818 5.73461 26.1244L13.699 30.7248C13.8975 30.8408 14.1233 30.902 14.3532 30.902C14.583 30.902 14.8088 30.8408 15.0073 30.7248L24.731 25.1103V28.9979C24.7321 29.0177 24.7283 29.0376 24.7199 29.0556C24.7115 29.0736 24.6988 29.0893 24.6829 29.1012L16.6317 33.7497C14.9096 34.7416 12.8643 35.0097 10.9447 34.4954C9.02506 33.9811 7.38785 32.7263 6.39227 31.0064ZM4.29707 13.6194C5.17156 12.0998 6.55279 10.9364 8.19885 10.3327C8.19885 10.4013 8.19491 10.5228 8.19491 10.6071V19.808C8.19351 20.0378 8.25334 20.2638 8.36823 20.4629C8.48312 20.6619 8.64893 20.8267 8.84863 20.9404L18.5723 26.5542L15.206 28.4979C15.1894 28.5089 15.1703 28.5155 15.1505 28.5173C15.1307 28.5191 15.1107 28.516 15.0924 28.5082L7.04046 23.8557C5.32135 22.8601 4.06716 21.2235 3.55289 19.3046C3.03862 17.3858 3.30624 15.3413 4.29707 13.6194ZM31.955 20.0556L22.2312 14.4411L25.5976 12.4981C25.6142 12.4872 25.6333 12.4805 25.6531 12.4787C25.6729 12.4769 25.6928 12.4801 25.7111 12.4879L33.7631 17.1364C34.9967 17.849 36.0017 18.8982 36.6606 20.1613C37.3194 21.4244 37.6047 22.849 37.4832 24.2684C37.3617 25.6878 36.8382 27.0432 35.9743 28.1759C35.1103 29.3086 33.9415 30.1717 32.6047 30.6641C32.6047 30.5947 32.6047 30.4733 32.6047 30.3889V21.188C32.6066 20.9586 32.5474 20.7328 32.4332 20.5338C32.319 20.3348 32.154 20.1698 31.955 20.0556ZM35.3055 15.0128C35.2464 14.9765 35.1431 14.9142 35.069 14.8717L27.1045 10.2712C26.906 10.1554 26.6803 10.0943 26.4504 10.0943C26.2206 10.0943 25.9948 10.1554 25.7963 10.2712L16.0726 15.8858V11.9982C16.0715 11.9783 16.0753 11.9585 16.0837 11.9405C16.0921 11.9225 16.1048 11.9068 16.1207 11.8949L24.1719 7.25025C25.4053 6.53903 26.8158 6.19376 28.2383 6.25482C29.6608 6.31589 31.0364 6.78077 32.2044 7.59508C33.3723 8.40939 34.2842 9.53945 34.8334 10.8531C35.3826 12.1667 35.5464 13.6095 35.3055 15.0128ZM14.2424 21.9419L10.8752 19.9981C10.8576 19.9893 10.8423 19.9763 10.8309 19.9602C10.8195 19.9441 10.8122 19.9254 10.8098 19.9058V10.6071C10.8107 9.18295 11.2173 7.78848 11.9819 6.58696C12.7466 5.38544 13.8377 4.42659 15.1275 3.82264C16.4173 3.21869 17.8524 2.99464 19.2649 3.1767C20.6775 3.35876 22.0089 3.93941 23.1034 4.85067C23.0427 4.88379 22.937 4.94215 22.8668 4.98473L14.9024 9.58517C14.7025 9.69878 14.5366 9.86356 14.4215 10.0626C14.3065 10.2616 14.2466 10.4877 14.2479 10.7175L14.2424 21.9419ZM16.071 17.9991L20.4018 15.4978L24.7325 17.9975V22.9985L20.4018 25.4983L16.071 22.9985V17.9991Z"
+                            fill="currentColor"></path>
+                    </svg></div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    <div class="request-:R3d6:-5 markdown prose break-words dark:prose-invert light correct">
+                        <p>
+
+                            The judge should rule in favor of Brunhilda and dismiss Frank's claim for breach of
+                            contract. In this situation, the contract between Brunhilda and Frank was valid and
+                            enforceable, but the fire that destroyed Brunhilda's orchard constitutes an unforeseeable
+                            event that prevents her from fulfilling her obligations under the contract. This is known as
+                            an "act of God" or an "act of nature," and it excuses the party from performing their duties
+                            under the contract.<br> In other words, Brunhilda did not breach the contract because she
+                            was
+                            unable to fulfill her obligations due to an unforeseen and uncontrollable event. Therefore,
+                            the judge should rule in her favor and dismiss Frank's claim.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Case -->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group bg-gray-50 dark:bg-gray-800">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div>
+                    <img src="images/justice_scale.png" alt="">
+                </div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    Green Company has a contract with Red Company to buy 400 golf balls, to be delivered to Green
+                    Company on July 16. The contract states that “time is of the essence.” On July 18, Red Company
+                    delivers the 400 golf balls to Green Company. Green Company refuses to accept the golf balls because
+                    of the delay and sues Red Company for breach of contract.<br>
+
+                    How should the judge rule?
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ground Truth-->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group dark:bg-gray-50">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div>
+                    <img src="images/judge_hammer-.png" alt="">
+                </div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    For Green Company, because the late delivery of golf balls constituted a material breach.<br>
+                    The correct answer is A. If a contract for the sale of goods provides for a specific delivery date
+                    or states that "time is of the essence," any late delivery is considered a material breach.
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ChatGPT response. Set class to correct if the response is correct, otherwise faulty-->
+    <div
+        class="w-full border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group dark:bg-[#444654] ">
+        <div class="text-base gap-6 m-auto md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0">
+            <div class="w-[30px] flex flex-col relative items-end">
+                <div class="relative h-[30px] w-[30px] p-1 rounded-sm text-white flex items-center justify-center"
+                    style="background-color: rgb(16, 163, 127);"><svg width="41" height="41" viewBox="0 0 41 41"
+                        fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" class="h-6 w-6">
+                        <path
+                            d="M37.5324 16.8707C37.9808 15.5241 38.1363 14.0974 37.9886 12.6859C37.8409 11.2744 37.3934 9.91076 36.676 8.68622C35.6126 6.83404 33.9882 5.3676 32.0373 4.4985C30.0864 3.62941 27.9098 3.40259 25.8215 3.85078C24.8796 2.7893 23.7219 1.94125 22.4257 1.36341C21.1295 0.785575 19.7249 0.491269 18.3058 0.500197C16.1708 0.495044 14.0893 1.16803 12.3614 2.42214C10.6335 3.67624 9.34853 5.44666 8.6917 7.47815C7.30085 7.76286 5.98686 8.3414 4.8377 9.17505C3.68854 10.0087 2.73073 11.0782 2.02839 12.312C0.956464 14.1591 0.498905 16.2988 0.721698 18.4228C0.944492 20.5467 1.83612 22.5449 3.268 24.1293C2.81966 25.4759 2.66413 26.9026 2.81182 28.3141C2.95951 29.7256 3.40701 31.0892 4.12437 32.3138C5.18791 34.1659 6.8123 35.6322 8.76321 36.5013C10.7141 37.3704 12.8907 37.5973 14.9789 37.1492C15.9208 38.2107 17.0786 39.0587 18.3747 39.6366C19.6709 40.2144 21.0755 40.5087 22.4946 40.4998C24.6307 40.5054 26.7133 39.8321 28.4418 38.5772C30.1704 37.3223 31.4556 35.5506 32.1119 33.5179C33.5027 33.2332 34.8167 32.6547 35.9659 31.821C37.115 30.9874 38.0728 29.9178 38.7752 28.684C39.8458 26.8371 40.3023 24.6979 40.0789 22.5748C39.8556 20.4517 38.9639 18.4544 37.5324 16.8707ZM22.4978 37.8849C20.7443 37.8874 19.0459 37.2733 17.6994 36.1501C17.7601 36.117 17.8666 36.0586 17.936 36.0161L25.9004 31.4156C26.1003 31.3019 26.2663 31.137 26.3813 30.9378C26.4964 30.7386 26.5563 30.5124 26.5549 30.2825V19.0542L29.9213 20.998C29.9389 21.0068 29.9541 21.0198 29.9656 21.0359C29.977 21.052 29.9842 21.0707 29.9867 21.0902V30.3889C29.9842 32.375 29.1946 34.2791 27.7909 35.6841C26.3872 37.0892 24.4838 37.8806 22.4978 37.8849ZM6.39227 31.0064C5.51397 29.4888 5.19742 27.7107 5.49804 25.9832C5.55718 26.0187 5.66048 26.0818 5.73461 26.1244L13.699 30.7248C13.8975 30.8408 14.1233 30.902 14.3532 30.902C14.583 30.902 14.8088 30.8408 15.0073 30.7248L24.731 25.1103V28.9979C24.7321 29.0177 24.7283 29.0376 24.7199 29.0556C24.7115 29.0736 24.6988 29.0893 24.6829 29.1012L16.6317 33.7497C14.9096 34.7416 12.8643 35.0097 10.9447 34.4954C9.02506 33.9811 7.38785 32.7263 6.39227 31.0064ZM4.29707 13.6194C5.17156 12.0998 6.55279 10.9364 8.19885 10.3327C8.19885 10.4013 8.19491 10.5228 8.19491 10.6071V19.808C8.19351 20.0378 8.25334 20.2638 8.36823 20.4629C8.48312 20.6619 8.64893 20.8267 8.84863 20.9404L18.5723 26.5542L15.206 28.4979C15.1894 28.5089 15.1703 28.5155 15.1505 28.5173C15.1307 28.5191 15.1107 28.516 15.0924 28.5082L7.04046 23.8557C5.32135 22.8601 4.06716 21.2235 3.55289 19.3046C3.03862 17.3858 3.30624 15.3413 4.29707 13.6194ZM31.955 20.0556L22.2312 14.4411L25.5976 12.4981C25.6142 12.4872 25.6333 12.4805 25.6531 12.4787C25.6729 12.4769 25.6928 12.4801 25.7111 12.4879L33.7631 17.1364C34.9967 17.849 36.0017 18.8982 36.6606 20.1613C37.3194 21.4244 37.6047 22.849 37.4832 24.2684C37.3617 25.6878 36.8382 27.0432 35.9743 28.1759C35.1103 29.3086 33.9415 30.1717 32.6047 30.6641C32.6047 30.5947 32.6047 30.4733 32.6047 30.3889V21.188C32.6066 20.9586 32.5474 20.7328 32.4332 20.5338C32.319 20.3348 32.154 20.1698 31.955 20.0556ZM35.3055 15.0128C35.2464 14.9765 35.1431 14.9142 35.069 14.8717L27.1045 10.2712C26.906 10.1554 26.6803 10.0943 26.4504 10.0943C26.2206 10.0943 25.9948 10.1554 25.7963 10.2712L16.0726 15.8858V11.9982C16.0715 11.9783 16.0753 11.9585 16.0837 11.9405C16.0921 11.9225 16.1048 11.9068 16.1207 11.8949L24.1719 7.25025C25.4053 6.53903 26.8158 6.19376 28.2383 6.25482C29.6608 6.31589 31.0364 6.78077 32.2044 7.59508C33.3723 8.40939 34.2842 9.53945 34.8334 10.8531C35.3826 12.1667 35.5464 13.6095 35.3055 15.0128ZM14.2424 21.9419L10.8752 19.9981C10.8576 19.9893 10.8423 19.9763 10.8309 19.9602C10.8195 19.9441 10.8122 19.9254 10.8098 19.9058V10.6071C10.8107 9.18295 11.2173 7.78848 11.9819 6.58696C12.7466 5.38544 13.8377 4.42659 15.1275 3.82264C16.4173 3.21869 17.8524 2.99464 19.2649 3.1767C20.6775 3.35876 22.0089 3.93941 23.1034 4.85067C23.0427 4.88379 22.937 4.94215 22.8668 4.98473L14.9024 9.58517C14.7025 9.69878 14.5366 9.86356 14.4215 10.0626C14.3065 10.2616 14.2466 10.4877 14.2479 10.7175L14.2424 21.9419ZM16.071 17.9991L20.4018 15.4978L24.7325 17.9975V22.9985L20.4018 25.4983L16.071 22.9985V17.9991Z"
+                            fill="currentColor"></path>
+                    </svg></div>
+            </div>
+            <div class="relative flex w-full flex-col lg:w-[calc(100%-115px)]">
+                <div class="min-h-[20px] flex flex-col items-start gap-4 ">
+                    <div class="request-:R3d6:-5 markdown prose break-words dark:prose-invert light faulty">
+                        <p>The judge should rule in favor of Red Company and dismiss Green Company's claim for breach of
+                            contract. In this situation, although Red Company did not deliver the golf balls on the
+                            agreed-upon date, the contract did not include any specific penalties for late delivery.
+                            Therefore, Red Company's failure to deliver on time does not constitute a breach of
+                            contract. <br> Additionally, the clause stating that "time is of the essence" does not
+                            automatically mean that a delay in delivery is a breach of contract. This clause is often
+                            included in contracts to emphasize the importance of timely performance, but it does not
+                            necessarily create strict penalties for late performance. <br>Therefore, the judge should
+                            rule
+                            in favor of Red Company and dismiss Green Company's claim. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
