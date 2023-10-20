@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaDoc Documentation - Source Reactor</title>
+</head>
+<body>
+    <h1>Source Reactor</h1>
+
+    <p>This is a reactor named "Source" that emits a sequence of integers.</p>
+
+    <h2>Parameters</h2>
+    <ul>
+        <li><b>sequence</b> - An array of integers representing the sequence to emit (e.g., [0, 1, 2]).</li>
+        <li><b>n_sequence</b> - The number of values to emit from the sequence (e.g., 3).</li>
+    </ul>
+
+    <h2>Output Ports</h2>
+    <ul>
+        <li><b>out</b> - The output port for emitting integers.</li>
+    </ul>
+
+    <h2>State Variables</h2>
+    <ul>
+        <li><b>count</b> - The state variable that keeps track of the current position in the sequence.</li>
+    </ul>
+
+    <h2>Logical Actions</h2>
+    <ul>
+        <li><b>next</b> - The logical action used to control the emission of values.</li>
+    </ul>
+
+    <h2>Reactions</h2>
+    <p>This reaction is triggered by the "startup" event and emits values from the sequence.</p>
+
+    <h3>Parameters</h3>
+    <ul>
+        <li><b>startup</b> - The event that triggers this reaction.</li>
+        <li><b>next</b> - The logical action that controls the emission.</li>
+    </ul>
+
+    <h3>Return Value</h3>
+    <p>The emitted value ("out") and the next logical action ("next").</p>
+
+    <h3>Action Steps</h3>
+    <ol>
+        <li>Set the "out" port to the value from the sequence at the current position.</li>
+        <li>Increment the "count" state variable to move to the next value in the sequence.</li>
+        <li>Check if there are more values to emit. If so, schedule the "next" action.</li>
+    </ol>
+</body>
+</html>
+
